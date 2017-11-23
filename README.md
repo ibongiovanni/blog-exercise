@@ -24,6 +24,7 @@ Simple Page Application Example with API REST backend
 
 ### Start Frontend
 1. `cd ../frontend`
+1.2 `npm install --global gulp-cli bower` (if not installed yet)
 2. `npm install`
 3. `bower install`
 4. `gulp serve`
