@@ -131,7 +131,6 @@ gulp.task('serve', () => {
 
     gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/templates/*.hbs', ['templates']);
-    gulp.watch('app/templates/partials/**/*.hbs', ['partials']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
     gulp.watch('bower.json', ['wiredep', 'fonts']);
@@ -204,5 +203,5 @@ gulp.task('templates', function(){
       noRedeclare: true, // Avoid duplicate declarations 
     }))
     .pipe(concat('templates.js'))
-    .pipe(gulp.dest('.tmp/js/'));
+    .pipe(gulp.dest('.tmp/templates/'));
 });

@@ -1,3 +1,17 @@
 <div id="home">
-  
+  <div class="posts">
+    {{#each posts}}
+     <div>
+       <div>
+        <h2>{{title}}</h2>
+       </div>
+       <div>
+        <p>
+         {{body}}
+        </p>
+       </div>
+     </div>
+     <hr>
+    {{/each}}
+  </div>
 </div>
